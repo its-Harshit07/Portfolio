@@ -346,32 +346,49 @@ button, input, select, textarea {
   padding: 0 8vw;           /* Padding on the right for balanced composition */
   margin: 0;
   overflow: hidden;
+  background-color: var(--bg-slate);
 }
 
-.hero-full-bg {
+.hero-bg-solid {
   position: absolute;
   inset: 0;
   z-index: 1;
+  background-color: var(--bg-slate); /* Dark page background layer */
 }
 
-.hero-full-img {
+.hero-portrait-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 48%;                 /* Sized 48% of viewport width */
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-portrait-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 18% center; /* Position face toward the LEFT side of the frame */
-  filter: brightness(85%) contrast(108%);
+  object-position: center 15%;
+  filter: none !important;     /* CRISP & SHARP — zero blur filter */
 }
 
-.hero-full-overlay {
+.hero-portrait-edge-fade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(26, 26, 29, 0.25) 0%, rgba(26, 26, 29, 0.7) 45%, rgba(26, 26, 29, 0.95) 85%),
-              linear-gradient(180deg, rgba(26, 26, 29, 0.3) 0%, rgba(26, 26, 29, 0.98) 100%);
+  background: linear-gradient(90deg, transparent 65%, var(--bg-slate) 100%),
+              linear-gradient(0deg, var(--bg-slate) 0%, transparent 18%),
+              linear-gradient(180deg, var(--bg-slate) 0%, transparent 10%);
+  pointer-events: none;
 }
 
 .hero-right-content {
   position: relative;
-  z-index: 2;
+  z-index: 10;                /* Always rendered on top */
   text-align: right;          /* Text aligned to the right */
   max-width: 580px;
   display: flex;

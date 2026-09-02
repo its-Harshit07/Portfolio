@@ -6,10 +6,20 @@ export const Hero: React.FC = () => {
 
   return (
     <section className="hero-section full-viewport-hero" id="hero" ref={ref}>
-      <div className="hero-full-bg">
-        <img src="/assets/hero/hero-portrait.jpg" alt="Harshit Larenc Background Photo" className="hero-full-img" />
-        <div className="hero-full-overlay"></div>
+      {/* Dark Base Background */}
+      <div className="hero-bg-solid"></div>
+
+      {/* Sharp Prominent Foreground Portrait on the Left */}
+      <div className="hero-portrait-wrapper">
+        <img
+          src="/assets/hero/hero-portrait.jpg"
+          alt="Harshit Larenc Portrait"
+          className="hero-portrait-img"
+        />
+        <div className="hero-portrait-edge-fade"></div>
       </div>
+
+      {/* Typography Layer on the Right (z-index 10) */}
       <div className={`hero-right-content reveal-init ${isIntersecting ? 'reveal-active' : ''}`}>
         <h1 className="hero-title stacked-hero-title">
           <span className="line-1">I AM</span>
