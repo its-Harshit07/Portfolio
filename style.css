@@ -685,7 +685,7 @@ button, input, select, textarea {
    ========================================================================== */
 .mountains-section-wrapper {
   position: relative;
-  background-image: url('assets/mountains.jpg');
+  background-image: url('/assets/mountains.jpg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; /* Parallax Effect */

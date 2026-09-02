@@ -59,7 +59,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'AI / ML • PYTHON • FASTAPI',
     description: 'Real-time deep learning gender classification web application using modern vision models.',
     fullDescription: 'IndianGenderClassifier is an advanced AI/ML computer vision application designed to accurately identify and classify facial profiles with custom deep neural networks trained on diverse demographic datasets.',
-    image: 'assets/projects/indian-gender-classifier.png',
+    image: '/assets/projects/indian-gender-classifier.png',
     technologies: ['PyTorch', 'Python', 'FastAPI', 'OpenCV', 'React'],
     liveUrl: 'https://indiangenderclassifier.onrender.com/'
   },
@@ -69,7 +69,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'FULL-STACK • REACT • SOCKET.IO',
     description: 'Interactive real-time multiplayer UNO card game engine built for web browsers.',
     fullDescription: 'UNO-Multiplayer features real-time WebSocket room synchronization, custom card game state rule validation, sound effects, dynamic lobbies, and an intuitive responsive user interface.',
-    image: 'assets/projects/uno-multiplayer.png',
+    image: '/assets/projects/uno-multiplayer.png',
     technologies: ['React', 'Node.js', 'Socket.IO', 'TypeScript', 'CSS Modules'],
     liveUrl: 'https://playuno-hl.vercel.app'
   },
@@ -79,7 +79,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'WEB APP • JAVASCRIPT • CSS3',
     description: 'Sleek dark minimal web calculator with keyboard listeners & math history log.',
     fullDescription: 'A sleek minimal web calculation interface featuring full keyboard shortcut listeners, interactive ripple feedback, history logging, and scientific function calculations.',
-    image: 'assets/projects/calculator.png',
+    image: '/assets/projects/calculator.png',
     technologies: ['JavaScript', 'CSS3', 'HTML5', 'LocalStorage'],
     liveUrl: 'https://calculator-hl.vercel.app'
   }
@@ -124,7 +124,7 @@ export const CERTIFICATES: CertificateItem[] = [
     issuerBadge: 'AWS CERTIFIED',
     issuerIcon: 'fa-brands fa-aws',
     credentialId: 'CLOUD ESSENTIALS',
-    image: 'assets/certs/aws-cloud-practitioner.png',
+    image: '/assets/certs/aws-cloud-practitioner.png',
     verifyUrl: 'https://skillbuilder.aws/c50e36cf-89d9-45d3-9b75-4cd2174b18a1'
   },
   {
@@ -134,7 +134,7 @@ export const CERTIFICATES: CertificateItem[] = [
     issuerBadge: 'AWS CERTIFIED',
     issuerIcon: 'fa-brands fa-aws',
     credentialId: 'TECHNICAL ARCHITECTURE',
-    image: 'assets/certs/aws-technical-essentials.png',
+    image: '/assets/certs/aws-technical-essentials.png',
     verifyUrl: 'https://skillbuilder.aws/f6202879-ae61-4708-b18b-18e9691700d9'
   },
   {
@@ -144,7 +144,7 @@ export const CERTIFICATES: CertificateItem[] = [
     issuerBadge: 'ORACLE ASSOCIATE',
     issuerIcon: 'fa-solid fa-database',
     credentialId: 'OCI AI ASSOCIATE',
-    image: 'assets/certs/oracle-oci-ai.png',
+    image: '/assets/certs/oracle-oci-ai.png',
     verifyUrl: 'https://catalog-education.oracle.com/pls/certview/sharebadge?id=C8C1F145E87C21238FCCED0989450CDFAAB7F4C2CCA14D65B429576C303348A6'
   },
   {
@@ -154,7 +154,7 @@ export const CERTIFICATES: CertificateItem[] = [
     issuerBadge: 'ORACLE ASSOCIATE',
     issuerIcon: 'fa-solid fa-server',
     credentialId: 'DATA PLATFORM ASSOCIATE',
-    image: 'assets/certs/oracle-data-platform.png',
+    image: '/assets/certs/oracle-data-platform.png',
     verifyUrl: 'https://catalog-education.oracle.com/pls/certview/sharebadge?id=ECB7BCEFB293B57920A0A9576AD027A79DCFC401BA3F814534BA7009104CAB92'
   }
 ];

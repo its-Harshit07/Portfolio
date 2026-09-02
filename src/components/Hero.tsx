@@ -7,7 +7,7 @@ export const Hero: React.FC = () => {
   return (
     <section className="hero-section full-viewport-hero" id="hero" ref={ref}>
       <div className="hero-full-bg">
-        <img src="assets/hero.png" alt="Harshit Larenc Background Photo" className="hero-full-img" />
+        <img src="/assets/hero.png" alt="Harshit Larenc Background Photo" className="hero-full-img" />
         <div className="hero-full-overlay"></div>
       </div>
       <div className={`hero-center-content reveal-init ${isIntersecting ? 'reveal-active' : ''}`}>
