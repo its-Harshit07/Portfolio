@@ -793,30 +793,20 @@ button, input, select, textarea {
   transform: translateY(-2px);
 }
 
-/* CONTINUOUS PANORAMIC MOUNTAIN PARALLAX WRAPPER */
+/* CONTINUOUS PANORAMIC MOUNTAIN WRAPPER */
 .mountains-section-wrapper {
   position: relative;
-  background-color: var(--bg-main);
-  overflow: hidden;
-}
-
-.mountains-section-wrapper::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url('/assets/mountains.jpg');
+  background-image: url('/assets/mountains.webp');
   background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  background-position: center top;
   background-repeat: no-repeat;
-  filter: contrast(1.25) brightness(1.45) saturate(1.1);
-  z-index: 0;
+  overflow: hidden;
 }
 
 .mountains-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(26, 26, 29, 0.55) 0%, rgba(20, 20, 23, 0.62) 50%, rgba(26, 26, 29, 0.55) 100%);
+  background: linear-gradient(180deg, rgba(26, 26, 29, 0.3) 0%, rgba(20, 20, 23, 0.1) 50%, rgba(26, 26, 29, 0.3) 100%);
   pointer-events: none;
   z-index: 1;
 }
@@ -1548,10 +1538,6 @@ a.detail-value:hover {
 
   .intro-card-section {
     margin-top: -30px;
-  }
-
-  .mountains-section-wrapper::before {
-    background-attachment: scroll;
   }
 }
 
