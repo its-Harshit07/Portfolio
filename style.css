@@ -685,18 +685,27 @@ button, input, select, textarea {
    ========================================================================== */
 .mountains-section-wrapper {
   position: relative;
+  background-color: var(--bg-main);
+  overflow: hidden;
+}
+
+.mountains-section-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background-image: url('/assets/mountains.jpg');
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed; /* Parallax Effect */
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  overflow: hidden;
+  filter: contrast(1.25) brightness(1.45) saturate(1.1);
+  z-index: 0;
 }
 
 .mountains-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(30, 34, 45, 0.9) 0%, rgba(20, 24, 34, 0.92) 50%, rgba(30, 34, 45, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(30, 34, 45, 0.55) 0%, rgba(20, 24, 34, 0.62) 50%, rgba(30, 34, 45, 0.55) 100%);
   pointer-events: none;
   z-index: 1;
 }
