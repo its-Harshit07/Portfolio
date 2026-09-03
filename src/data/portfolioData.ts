@@ -161,7 +161,6 @@ export const CERTIFICATES: CertificateItem[] = [
 
 export const CONTACT_INFO: ContactInfo = {
   email: 'harshitlarenc@gmail.com',
-  phone: '+91 92411-76855',
   location: 'Punjab, India (Lovely Professional University)',
   github: 'https://github.com/its-Harshit07',
   linkedin: 'https://www.linkedin.com/in/harshit-larenc-750170386/',

@@ -181,18 +181,6 @@ export const Contact: React.FC = () => {
 
               <div className="contact-detail-item">
                 <div className="detail-icon">
-                  <i className="fa-solid fa-phone"></i>
-                </div>
-                <div className="detail-text">
-                  <span className="detail-label">PHONE / WHATSAPP</span>
-                  <a href={`tel:${CONTACT_INFO.phone.replace(/\s+/g, '')}`} className="detail-value">
-                    {CONTACT_INFO.phone}
-                  </a>
-                </div>
-              </div>
-
-              <div className="contact-detail-item">
-                <div className="detail-icon">
                   <i className="fa-solid fa-location-dot"></i>
                 </div>
                 <div className="detail-text">

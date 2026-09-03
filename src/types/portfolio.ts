@@ -45,7 +45,7 @@ export interface CertificateItem {
 
 export interface ContactInfo {
   email: string;
-  phone: string;
+  phone?: string;
   location: string;
   linkedin: string;
   github: string;
