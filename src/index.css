@@ -1417,7 +1417,55 @@ a.detail-value:hover {
 }
 
 .modal-resume {
-  max-width: 750px;
+  max-width: 950px;
+  width: 92vw;
+  height: 88vh;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.modal-resume .modal-header {
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.modal-resume .resume-body {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+}
+
+.pdf-preview-container {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-accent);
+  background-color: #151517;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.pdf-preview-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.modal-resume .modal-footer {
+  margin-top: 16px;
+  flex-shrink: 0;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .modal-close {
