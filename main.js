@@ -1,12 +1,6 @@
-/**
- * HARSHIT LARENC PORTFOLIO - MAIN INTERACTION & ANIMATION LOGIC
- */
-
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ==========================================================================
-     1. STICKY NAVBAR & MOBILE NAVIGATION DRAWER
-     ========================================================================== */
+  /* 1. STICKY NAVBAR & MOBILE NAVIGATION DRAWER */
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
   const iconOpen = navToggle ? navToggle.querySelector('.icon-open') : null;
@@ -33,9 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ==========================================================================
-     2. ACTIVE SECTION NAV HIGHLIGHTER (INTERSECTION OBSERVER)
-     ========================================================================== */
+  /*2. ACTIVE SECTION NAV HIGHLIGHTER (INTERSECTION OBSERVER) */
   const sections = document.querySelectorAll('section[id]');
 
   const navObserverOptions = {
@@ -60,9 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(section => navObserver.observe(section));
 
-  /* ==========================================================================
-     3. SCROLL REVEAL ANIMATIONS
-     ========================================================================== */
+  /* 3. SCROLL REVEAL ANIMATIONS */
   const revealElements = document.querySelectorAll('.reveal-up, .reveal-fade-left, .reveal-fade-right');
 
   const revealObserver = new IntersectionObserver((entries) => {
@@ -76,9 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   revealElements.forEach(el => revealObserver.observe(el));
 
-  /* ==========================================================================
-     4. SKILL BADGES MOBILE TOUCH BLOOM INTERACTION
-     ========================================================================== */
+  /* 4. SKILL BADGES MOBILE TOUCH BLOOM INTERACTION */
   const skillBadges = document.querySelectorAll('.skill-badge');
   skillBadges.forEach(badge => {
     badge.addEventListener('touchstart', () => {
@@ -96,9 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ==========================================================================
-     5. RESUME MODAL HANDLER
-     ========================================================================== */
+  /* 5. RESUME MODAL HANDLER */
   const resumeModal = document.getElementById('resume-modal');
   const btnOpenIntro = document.getElementById('btn-open-resume-intro');
   const btnCloseResumeX = document.getElementById('close-resume-modal');
@@ -121,16 +107,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === resumeModal) closeResumeModal();
   });
 
-  /* ==========================================================================
-     6. CONTACT FORM SUBMISSION HANDLER
-     ========================================================================== */
+  /* 6. CONTACT FORM SUBMISSION HANDLER */
   const contactForm = document.getElementById('contact-form');
   const formFeedback = document.getElementById('form-feedback');
 
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
+
       const btnSubmit = document.getElementById('btn-submit-contact');
       const originalText = btnSubmit.innerHTML;
 
@@ -141,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btnSubmit.disabled = false;
         btnSubmit.innerHTML = originalText;
         contactForm.reset();
-        
+
         formFeedback.classList.remove('hidden');
         setTimeout(() => {
           formFeedback.classList.add('hidden');
