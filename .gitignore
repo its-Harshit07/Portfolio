@@ -35,4 +35,4 @@ pnpm-debug.log*
 # vite
 *.local
 
-**/*.pdf
+public/assets/*.pdf
