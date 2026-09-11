@@ -49,6 +49,15 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: 'Canva', icon: 'fa-solid fa-wand-magic-sparkles' },
       { name: 'Gamma', icon: 'fa-solid fa-cubes' }
     ]
+  },
+  {
+    id: 'soft-skills',
+    title: 'SOFT SKILLS',
+    skills: [
+      { name: 'Critical Thinking', icon: 'fa-solid fa-lightbulb' },
+      { name: 'Teamwork', icon: 'fa-solid fa-users' },
+      { name: 'Problem Solving', icon: 'fa-solid fa-puzzle-piece' }
+    ]
   }
 ];
 
