@@ -1,4 +1,4 @@
-import { SkillCategory, ProjectItem, EducationItem, CertificateItem, ContactInfo } from '../types/portfolio';
+import { SkillCategory, ExperienceItem, ProjectItem, EducationItem, CertificateItem, ContactInfo } from '../types/portfolio';
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
@@ -91,6 +91,20 @@ export const PROJECTS: ProjectItem[] = [
     image: '/assets/projects/calculator.png',
     technologies: ['JavaScript', 'CSS3', 'HTML5', 'LocalStorage'],
     liveUrl: 'https://calculator-hl.vercel.app'
+  }
+];
+
+export const EXPERIENCE_ITEMS: ExperienceItem[] = [
+  {
+    id: 'ibm-skillsbuild-internship',
+    title: 'IBM SkillsBuild Academic Internship – Data Analytics with AI',
+    company: 'BharatCares (IBM SkillsBuild Partner)',
+    period: "Aug '26 — Nov '26",
+    roleType: 'ACADEMIC INTERNSHIP',
+    description: 'Data Analytics & Artificial Intelligence academic internship program conducted by BharatCares in collaboration with IBM SkillsBuild, focusing on hands-on data analytics methodologies, machine learning workflows, and practical AI implementations.',
+    technologies: ['Data Analytics', 'Artificial Intelligence', 'IBM SkillsBuild', 'BharatCares', 'Python', 'AI Workflows'],
+    icon: 'fa-solid fa-laptop-code',
+    location: 'Virtual / Remote'
   }
 ];
 

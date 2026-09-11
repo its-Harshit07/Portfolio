@@ -19,9 +19,10 @@ export const Navbar: React.FC = () => {
   const navItems = [
     { id: 'skills', num: '01', label: 'TECHNICAL SKILLS' },
     { id: 'projects', num: '02', label: 'PROJECTS' },
-    { id: 'education', num: '03', label: 'EDUCATION' },
-    { id: 'certificates', num: '04', label: 'CERTIFICATES' },
-    { id: 'contact', num: '05', label: 'CONTACT' }
+    { id: 'experience', num: '03', label: 'EXPERIENCE' },
+    { id: 'education', num: '04', label: 'EDUCATION' },
+    { id: 'certificates', num: '05', label: 'CERTIFICATES' },
+    { id: 'contact', num: '06', label: 'CONTACT' }
   ];
 
   const handleNavClick = (id: string) => {

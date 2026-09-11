@@ -10,7 +10,7 @@ export const Certificates: React.FC = () => {
       <div className="container">
         <div className={`section-header reveal-init ${isIntersecting ? 'reveal-active' : ''}`}>
           <h2 className="section-title">
-            <span className="section-num">04</span> CERTIFICATES
+            <span className="section-num">05</span> CERTIFICATES
           </h2>
           <div className="section-line"></div>
         </div>

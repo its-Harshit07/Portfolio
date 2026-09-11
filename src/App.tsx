@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { IntroCard } from './components/IntroCard';
 import { TechnicalSkills } from './components/TechnicalSkills';
 import { Projects } from './components/Projects';
+import { Experience } from './components/Experience';
 import { Education } from './components/Education';
 import { Certificates } from './components/Certificates';
 import { Contact } from './components/Contact';
@@ -23,6 +24,7 @@ export const App: React.FC = () => {
         <IntroCard onOpenResume={() => setIsResumeOpen(true)} />
         <TechnicalSkills />
         <Projects />
+        <Experience />
 
         {/* Continuous Mountain Parallax Wrapper for Education & Certificates */}
         <div className="mountains-section-wrapper">

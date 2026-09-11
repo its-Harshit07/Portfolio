@@ -153,7 +153,7 @@ export const Contact: React.FC = () => {
       <div className="container">
         <div className={`section-header reveal-init ${isIntersecting ? 'reveal-active' : ''}`}>
           <h2 className="section-title">
-            <span className="section-num">05</span> CONTACT
+            <span className="section-num">06</span> CONTACT
           </h2>
           <div className="section-line"></div>
         </div>

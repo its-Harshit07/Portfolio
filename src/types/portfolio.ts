@@ -9,6 +9,18 @@ export interface SkillCategory {
   skills: SkillItem[];
 }
 
+export interface ExperienceItem {
+  id: string;
+  title: string;
+  company: string;
+  period: string;
+  roleType?: string;
+  description: string;
+  technologies: string[];
+  icon?: string;
+  location?: string;
+}
+
 export interface ProjectItem {
   id: string;
   title: string;
