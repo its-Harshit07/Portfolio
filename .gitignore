@@ -34,5 +34,4 @@ pnpm-debug.log*
 
 # vite
 *.local
-
-public/*.pdf
+

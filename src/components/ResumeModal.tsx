@@ -27,11 +27,24 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
         <div className="modal-body resume-body">
           <div className="pdf-preview-container">
-            <iframe
-              src={`${pdfUrl}#view=FitH`}
-              title="Harshit Larenc CV Preview"
+            <object
+              data={`${pdfUrl}#view=FitH`}
+              type="application/pdf"
               className="pdf-preview-iframe"
-            />
+            >
+              <iframe
+                src={`${pdfUrl}#view=FitH`}
+                title="Harshit Larenc CV Preview"
+                className="pdf-preview-iframe"
+              >
+                <div className="pdf-fallback flex flex-col items-center justify-center p-8 text-center">
+                  <p className="mb-4 text-slate-300">Your browser unable to display PDF natively.</p>
+                  <a href={pdfUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    Open PDF Document
+                  </a>
+                </div>
+              </iframe>
+            </object>
           </div>
         </div>
 
