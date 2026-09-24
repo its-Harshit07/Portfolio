@@ -20,10 +20,12 @@ export const Navbar: React.FC = () => {
     { id: 'skills', num: '01', label: 'TECHNICAL SKILLS' },
     { id: 'projects', num: '02', label: 'PROJECTS' },
     { id: 'experience', num: '03', label: 'EXPERIENCE' },
-    { id: 'education', num: '04', label: 'EDUCATION' },
-    { id: 'certificates', num: '05', label: 'CERTIFICATES' },
-    { id: 'contact', num: '06', label: 'CONTACT' }
+    { id: 'achievements', num: '04', label: 'ACHIEVEMENTS' },
+    { id: 'education', num: '05', label: 'EDUCATION' },
+    { id: 'certificates', num: '06', label: 'CERTIFICATES' },
+    { id: 'contact', num: '07', label: 'CONTACT' }
   ];
+
 
   const handleNavClick = (id: string) => {
     setIsMenuOpen(false);
@@ -59,7 +61,7 @@ export const Navbar: React.FC = () => {
                     handleNavClick(item.id);
                   }}
                 >
-                  <span className="nav-num">{item.num}</span> {item.label}
+                  {item.label}
                 </a>
               </li>
             ))}

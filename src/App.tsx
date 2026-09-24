@@ -5,6 +5,7 @@ import { IntroCard } from './components/IntroCard';
 import { TechnicalSkills } from './components/TechnicalSkills';
 import { Projects } from './components/Projects';
 import { Experience } from './components/Experience';
+import { Achievements } from './components/Achievements';
 import { Education } from './components/Education';
 import { Certificates } from './components/Certificates';
 import { Contact } from './components/Contact';
@@ -25,6 +26,7 @@ export const App: React.FC = () => {
         <TechnicalSkills />
         <Projects />
         <Experience />
+        <Achievements />
 
         {/* Continuous Mountain Parallax Wrapper for Education & Certificates */}
         <div className="mountains-section-wrapper">

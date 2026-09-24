@@ -1,4 +1,4 @@
-import { SkillCategory, ExperienceItem, ProjectItem, EducationItem, CertificateItem, ContactInfo } from '../types/portfolio';
+import { SkillCategory, ExperienceItem, AchievementItem, ProjectItem, EducationItem, CertificateItem, ContactInfo } from '../types/portfolio';
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
@@ -107,6 +107,20 @@ export const EXPERIENCE_ITEMS: ExperienceItem[] = [
     location: 'Virtual / Remote'
   }
 ];
+
+export const ACHIEVEMENT_ITEMS: AchievementItem[] = [
+  {
+    id: 'healthcare-screening-patent',
+    title: 'HEALTHCARE SCREENING SYSTEM WITH BIOMETRIC AUTHENTICATION AND GSM-BASED MEDICAL ALERTING',
+    patentNumber: 'Patent Application No. 202611109185',
+    status: 'Applied — Patent application submitted; not yet published',
+    description: 'A complete hardware + software project developed as an integrated healthcare screening and medical alerting system. The system combines biometric/health sensing with automated medical alerting capabilities. The complete embedded and system coding for the project was implemented in C.',
+    technologies: ['Arduino', 'SIM900 GSM Module', 'MAX30100', 'DS18B20', 'C'],
+    icon: 'fa-solid fa-award',
+    roleType: 'PATENT APPLICATION'
+  }
+];
+
 
 export const EDUCATION_ITEMS: EducationItem[] = [
   {

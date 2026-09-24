@@ -21,6 +21,18 @@ export interface ExperienceItem {
   location?: string;
 }
 
+export interface AchievementItem {
+  id: string;
+  title: string;
+  patentNumber: string;
+  status: string;
+  description: string;
+  technologies: string[];
+  icon?: string;
+  roleType?: string;
+}
+
+
 export interface ProjectItem {
   id: string;
   title: string;
