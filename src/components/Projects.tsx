@@ -81,8 +81,8 @@ export const Projects: React.FC = () => {
       {/* Project Detail Modal */}
       {selectedProject && (
         <div className="modal-backdrop" onClick={() => setSelectedProject(null)}>
-          <div className="modal-container" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setSelectedProject(null)}>
+          <div className="modal-container project-detail-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setSelectedProject(null)} aria-label="Close modal">
               <i className="fa-solid fa-xmark"></i>
             </button>
             <div className="modal-header">
@@ -93,36 +93,23 @@ export const Projects: React.FC = () => {
               <img
                 src={selectedProject.image}
                 alt={selectedProject.title}
-                style={{ width: '100%', borderRadius: '8px', marginBottom: '20px', border: '1px solid var(--border-color)', objectFit: 'contain', backgroundColor: '#151517' }}
+                className="modal-project-img"
               />
-              <p style={{ fontSize: '0.95rem', lineHeight: '1.7', color: 'var(--text-light)', marginBottom: '20px' }}>
+              <p className="modal-project-desc">
                 {selectedProject.fullDescription}
               </p>
-              <div style={{ marginBottom: '24px' }}>
-                <h4 style={{ fontSize: '0.85rem', letterSpacing: '0.12em', color: 'var(--text-muted)', marginBottom: '10px' }}>
-                  TECHNOLOGY STACK
-                </h4>
-                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+              <div className="modal-tech-wrapper">
+                <h4 className="modal-tech-heading">TECHNOLOGY STACK</h4>
+                <div className="modal-tech-tags">
                   {selectedProject.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      style={{
-                        padding: '6px 14px',
-                        background: 'var(--accent-light)',
-                        border: '1px solid var(--border-accent)',
-                        borderRadius: '20px',
-                        fontSize: '0.78rem',
-                        fontWeight: 700,
-                        color: 'var(--text-white)'
-                      }}
-                    >
+                    <span key={tech} className="modal-tech-tag">
                       {tech}
                     </span>
                   ))}
                 </div>
               </div>
             </div>
-            <div className="modal-footer" style={{ display: 'flex', gap: '12px', justifyContent: 'flex-end' }}>
+            <div className="modal-footer">
               {selectedProject.liveUrl && selectedProject.liveUrl !== '#' && (
                 <a
                   href={selectedProject.liveUrl}
